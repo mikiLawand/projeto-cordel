@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root{
+    --fonteDisplay:'Calistoga', cursive;
+    --fonteCorpo:'Itim', cursive; 
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+html, boddy{
+    min-height: 100vh;
+    background-color:whitesmoke;
+}
+
+header{
+    background-color: #BF3604;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: var(--fonteDisplay);
+    text-transform: uppercase;
+    font-size: 6vw; /*10% da largura da tela,para que seja adaptavel*/
+}
+
+a{
+    color: #401E01;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline; /*sublinha o texto do link quando o mouse está por cima*/
+}
+
+section{
+   padding-top: 10vh; 
+   padding-bottom: 10vh;
+   line-height: 2em; /*espaçamento duplo entre as linhas*/
+   padding-left: 30px;
+   font-family: var(--fonteCorpo);
+   font-size: 3.5vw;
+}
+
+section > p{
+    padding: 1em; /*criando paragrafos*/
+}
+
+section.normal{
+    background-color: #254027;
+    color: whitesmoke;
+}
+
+section.imagem{
+    background-color: #97A660;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /*fixando a imagem ao fundo da tela*/
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: #aec16ab2;
+    padding: 5px;
+    text-shadow:  1px 1px 0px rgba(0, 0, 0, 0.55);
+}
+
+section#img01{
+   background-image: url('../imagens/pexels-mo-eid-11890414.jpg');
+   
+   
+}
+
+section#img02{
+  background-image: url('../imagens/pexels-nick-wehrli-3762284.jpg');
+  
+  
+}
+
+footer{
+    background-color:#BF3604;
+    color: whitesmoke;
+    text-align: center;
+    padding:10px;
+}
